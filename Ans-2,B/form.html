@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bug Report</title> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+.logo-name{
+
+	text-transform: capitalize;
+	color:#18b388;
+	font-size: larger;
+	font-weight:500;
+}
+
+ul#listcss li {
+
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display:inline;
+  float:left;
+  color:#18b388;
+  border-radius: 7px;
+}
+
+.heading{
+	background-color: #80808070;
+	color:white;
+	padding:15px;
+	
+}
+
+form{
+
+	margin-top:50px;
+	border:1px solid black;
+}
+
+.form-group{
+
+	padding:2px 15px;
+}
+
+#os {
+
+	display:block;
+	width:100%;
+	padding:7px;
+	background-color: #18b388;
+	color: white;
+	border-radius: 7px;
+}
+
+#variation{
+
+	width:30%;
+}
+
+.license {
+
+	display:inline;
+	border-radius: 7px;
+}
+
+.custom-file{
+padding:2px 15px;
+border-radius: 7px;
+
+}
+.subcss{
+
+	padding:7px 0px;
+	background-color: #80808070;
+}
+.btn-success {
+    color: #fff;
+    background-color: #35b388;
+    border-color: #28a745;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-3">
+
+				<span class="logo-name">To The New</span>
+
+			</div>
+
+			<div class="col-xs-12 col-md-6">
+
+				<form>
+						<h3 class="heading">Bug Report</h3>
+
+						<div class="form-group">
+				      <label for="title">Title:*</label>
+				      <input type="text" class="form-control" name="title">
+    					</div>
+
+    					<div class="form-group">
+				      <label for="description">Description:*</label>
+				    <textarea class="form-control" name="description" rows="4"></textarea>
+    					</div>
+
+
+    					<div class="form-group">
+				      <label for="description">Operating System:*</label>
+				   <select id="os">
+
+				   	<option value="Windows">Windows</option>
+				   	<option value="mac">mac</option>
+				   	<option value="ubuntu">ubuntu</option>
+
+
+				   </select>
+    					</div>
+
+
+    					<div class="form-group">
+				      <label for="description">Product:*</label>
+				   <select id="os">
+
+				   	<option value="Windows">Windows</option>
+				   	<option value="mac">mac</option>
+				   	<option value="ubuntu">ubuntu</option>
+
+
+				   </select>
+    					</div>
+
+    					<div class="form-group" id="variation">
+				    
+				    <label for="title">Variations:*</label>
+				      <input type="text" class="form-control" name="variations">
+    					</div>
+
+
+
+    					<div class="form-group" id="variation">
+				    
+				    <label for="title">License:*</label>
+				    <div class="container">
+				    <div class="row">
+
+				    	<div class="col-xs-12 col-md-6">
+				      <input type="radio" class="form-control" name="free" class="license">Free
+				  </div>
+				  <div class="col-xs-12 col-md-6">
+				     <input type="radio" class="form-control" name="bussiness" class="license" style="margin-left: 200px;"><span style="margin-left: 200px;">Buisness</span>
+				</div>
+				  </div>
+				</div>
+    					</div>
+
+
+    						<div class="form-group">
+				      <label for="description">Severity:*</label>
+				   <select id="os">
+
+				   	<option value="critical">Critical</option>
+				   	<option value="non-critical">Non critical</option>
+				   
+
+
+				   </select>
+    					</div>
+
+<div class="form-group">
+				<div class="custom-file">
+				  <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+				  <label class="custom-file-label" for="customFileLang">No file attached</label>
+				</div>
+			</div>
+
+<div class="container subcss">
+				    <div class="row">
+				    	<div class="col-md-4">
+				    	</div>
+				    	<div class="col-md-4">
+				    	</div>
+				    	<div class="col-md-4" >
+			<div class="form-group">
+				<button type="button" class="btn btn-success" style="float:right">Send</button>
+			</div>
+		</div>
+</div>
+</div>
+				</form>
+
+			</div>
+
+			<div class="col-xs-12 col-md-3">
+
+				<ul id="listcss">
+
+					<li>Home</li>
+					<li style="margin-left:10px">Quick Help</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+</body>
+</html>
