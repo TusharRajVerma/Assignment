@@ -8,7 +8,7 @@ public class Ans9 {
 
 enum SampleEnum{
     house1("10000"),house2("20000"),house3("300000");
-
+	
     String  price;
 
     SampleEnum(String price) {
