@@ -1,50 +1,23 @@
-public class Ans11 {
-    public static void main(String[] args) {
-        Bank bank = new Bank();
-        System.out.println(bank.getDetails());
-        SBI sbi = new SBI();
-        System.out.println(sbi.getDetails());
-        BOI boi = new BOI();
-        System.out.println(boi.getDetails());
-        ICICI icici = new ICICI();
-        System.out.println(icici.getDetails());
-    }
-
+class Ans11
+{
+public static void main(String [] args) 
+{
+int i=0,j=0;  
+int s = 0; 
+    int t = 1; 
+    while(i<10)
+    { 
+    s = s + i;
+    j=i; 
+    while(j>0) 
+    { 
+    t = t * (j - i);
+    j=j-1; 
+    } 
+    s = s * t; 
+    System.out.println("T is " + t);
+    i=i+1; 
+    } 
+    System.out.println("S is " + s);
 }
-
-class Bank{
-    float generalRateOfInterest = 4f;
-    public float getDetails() {
-        return generalRateOfInterest;
-    }
-
-}
-
-class BOI extends Bank{
-    float rateOfInterestBOI = 2.5f;
-
-    @Override
-    public float getDetails() {
-        return rateOfInterestBOI;
-    }
-}
-
-class SBI extends Bank{
-    float rateOfInterestSBI = 3.5f;
-
-    @Override
-    public float getDetails() {
-        return rateOfInterestSBI;
-    }
-
-}
-
-class ICICI extends Bank{
-    float rateOfInterestICICI = 1.5f;
-
-    @Override
-    public float getDetails() {
-        return rateOfInterestICICI;
-    }
-
 }
